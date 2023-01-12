@@ -1,0 +1,125 @@
+// 1.char at the given index
+
+public class exe
+{
+public static void main(String[] args)
+{
+String str="Varsha";
+System.out.println("String str" +str);
+int index=str.charAt(5);
+System.out.println("The Character at position 5 is" +(char)index);
+}
+}
+
+
+// 2.First letter into capital for given string
+
+public class UpperCase {
+	public static void main(String[] args) {
+		String s =("i am studying mca");
+		char[] charArray = s.toCharArray();
+		boolean foundSpace = true;
+		for(int i = 0; i < charArray.length;i++)
+		{
+			if (Character . isLetter(charArray[i]))
+			{
+				if(foundSpace)
+				{
+					charArray[i] = Character . toUpperCase(charArray[i]);
+					foundSpace = false;
+				}
+			}
+			else 
+			{
+				foundSpace = true;
+			}
+		}
+			s = String.valueOf(charArray);
+			System.out.println("s:"+ s);
+		}
+}
+
+
+// 3.sequence of char values
+
+public class Match{
+	public static void main(String args[]) {
+		String a = "Welcome to Careertuner";
+		String b = "Welcome to Careertuner";
+		System.out.println(a.matches(b));
+	}
+
+}
+
+
+// 4.String ends with the contents of another string
+
+
+public class Endsstring {
+	public static void main(String[] args) {
+		String s = "shivani";
+		String b = "vani";
+		System.out.println(s.endsWith(b));
+	}
+}
+ 
+ 
+// 5.Count the number of words present in the given string
+
+
+public class Noof {
+		public static void main(String[] args) {
+			String s="i am learning java";
+			System.out.println(s.length());
+		}
+
+	}
+ 
+ 
+ // 6. Capital letters from string
+ 
+ public class CapitalLetters {
+	public static void main(String[] args) {
+		String str = "Welcome To Hyderabad";
+		for(int i = 0; i < str.length(); i++) {
+			if(Character.isUpperCase(str.charAt(i))) {
+				System.out.println(str.charAt(i));
+			}
+		}
+	}
+
+}
+
+
+// 7.Second Occurance into capital
+
+public class SecondOccurance {
+
+	public static void main(String[] args) {
+		String a = "bvrit college";
+		int index = 9;
+		char ch = 'l';
+		String replaceString = a.replace("ll", "lL");
+		System.out.println(replaceString);
+
+	}
+
+}
+
+
+// 8. Small letter to capital letter
+
+public class smalltocapital {
+	public static void main(String[] args) {
+		String str = "i am preparing for java full stack";
+		String strUpper = str . toUpperCase();
+		System.out.println("String:" +str);
+		System.out.println("String changed to upper case:" +strUpper);
+	}
+
+}
+
+ 
+
+
+
