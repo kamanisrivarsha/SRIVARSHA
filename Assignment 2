@@ -140,6 +140,7 @@ the first 10 natural numbers are1
 // product details
 
 
+import java.util.*;
 public class Productdetails {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
